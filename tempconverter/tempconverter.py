@@ -1,3 +1,9 @@
+#function to take user user input
+def userInput():
+    user_input = input("is your temperature in Celcius(Enter C) or Farenheit(Enter F)? ")
+    temperature = float(input("Enter the temperature: "))
+    return user_input, temperature
+
 #function for Farenheit to Celcius
 def CtoF(temperature):
     return (temperature * 1.8 + 32)

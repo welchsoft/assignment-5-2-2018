@@ -1,13 +1,12 @@
 #import out tempconverter functions
 import tempconverter
 #take user userInput
-userInput = input("is your temperature in Celcius(Enter C) or Farenheit(Enter F)?")
-temp = float(input("Enter the temperature"))
+(user_input, temperature) = tempconverter.userInput()
 
-#our logic to ahndle which conversion, and the conversions themselves
-if userInput == "C" or userInput == "c":
-    print(tempconverter.CtoF(temp))
-elif userInput == "F" or userInput == "f":
-    print(tempconverter.FtoC(temp))
+#our logic to handle which conversion, and the conversions themselves
+if user_input == "C" or user_input == "c":
+    print(tempconverter.CtoF(temperature))
+elif user_input == "F" or user_input == "f":
+    print(tempconverter.FtoC(temperature))
 else:
-    print("Invalid entry try again")
+    print("Invalid entry try again ")
