@@ -6,7 +6,7 @@ def userInput():
     return first_number,operand,second_number
 
 #function to display the results
-def displayResult(first_number,operand, second_number, result):
+def displayResult(first_number, operand, second_number, result):
     print(f"{first_number} {operand} {second_number} = {result}")
 
 #function for adding

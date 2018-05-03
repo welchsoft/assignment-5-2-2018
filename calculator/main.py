@@ -18,4 +18,5 @@ elif operand == "/":
 else:
     print("Error: invalid operand ")
 
+#display the result
 calculator.displayResult(first_number,operand,second_number, result)
