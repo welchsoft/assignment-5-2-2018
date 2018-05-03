@@ -5,6 +5,7 @@ def userInput():
     second_number = float(input("Enter the second number: "))
     return first_number,operand,second_number
 
+#function to display the results
 def displayResult(first_number,operand, second_number, result):
     print(f"{first_number} {operand} {second_number} = {result}")
 
