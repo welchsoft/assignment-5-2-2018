@@ -1,18 +1,21 @@
 import calculator
 
 #take user input
-firstNumber = float(input("Enter the first number"))
-operand = str(input("Enter the operand"))
-secondNumber = float(input("Enter the second number"))
+(first_number,operand,second_number) = calculator.userInput()
+
+#result variable
+result = 0.0
 
 #check the operand against available functions and run it if possible
 if operand == "+":
-    print(calculator.add(firstNumber, secondNumber))
+    result = calculator.add(first_number, second_number)
 elif operand == "-":
-    print(calculator.subtract(firstNumber, secondNumber))
+    result = calculator.subtract(first_number, second_number)
 elif operand == "*":
-    print(calculator.multiply(firstNumber, secondNumber))
+    result = calculator.multiply(first_number, second_number)
 elif operand == "/":
-    print(calculator.divide(firstNumber, secondNumber))
+    result = calculator.divide(first_number, second_number)
 else:
-    print("invalid operand")
+    print("Error: invalid operand ")
+
+calculator.displayResult(first_number,operand,second_number, result)

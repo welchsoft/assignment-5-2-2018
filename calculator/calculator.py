@@ -1,15 +1,25 @@
+#function to take input from user
+def userInput():
+    first_number = float(input("Enter the first number: "))
+    operand = input("Enter the operand (+,-,*,/): ")
+    second_number = float(input("Enter the second number: "))
+    return first_number,operand,second_number
+
+def displayResult(first_number,operand, second_number, result):
+    print(f"{first_number} {operand} {second_number} = {result}")
+
 #function for adding
-def add(num1,num2):
-    return num1 + num2
+def add(first_number,second_number):
+    return first_number + second_number
 
 #function for subtracting
-def subtract(num1,num2):
-    return num1 - num2
+def subtract(first_number,second_number):
+    return first_number - second_number
 
 #function for multiplying
-def multiply(num1,num2):
-    return num1 * num2
+def multiply(first_number,second_number):
+    return first_number * second_number
 
 #function for dividing
-def divide(num1,num2):
-    return num1 / num2
+def divide(first_number,second_number):
+    return first_number / second_number
